@@ -16,11 +16,11 @@ interface Props {
 // set default color to primary
 const Button = ({ color = "primary", btn_text, onClick }: Props) => {
   return (
-    <div>
+    <>
       <button type="button" className={"btn btn-" + color} onClick={onClick}>
         {btn_text}
       </button>
-    </div>
+    </>
   );
 };
 

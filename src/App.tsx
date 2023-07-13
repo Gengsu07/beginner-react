@@ -1,6 +1,7 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import ExeAlert from "./components/ExeAlert";
 
 function App() {
   let items = ["Jakarta", "Yogyakarta", "Surabaya", "Malang", "Palembang"];
@@ -36,6 +37,14 @@ function App() {
         btn_text="Klik Sini"
         onClick={() => console.log("Clicked")}
       />
+      <hr />
+      <ExeAlert alert="primary">
+        "Alert" <strong>"MAYDAY MAYDAY"</strong>
+      </ExeAlert>
+      <hr />
+      <ExeAlert alert="danger">
+        "Alert" <strong>"DANGER DANGER"</strong>
+      </ExeAlert>
     </div>
   );
 }
